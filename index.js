@@ -1,8 +1,8 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const { customAlphabet } = require('nanoid');
-const getShard = require('./db'); // Import sharding logic
-const redis = require('redis');
+import express from 'express';
+import bodyParser from 'body-parser';
+import { customAlphabet } from 'nanoid';
+import getShard from './db.js'; // Import sharding logic
+import redis from 'redis';
 
 const app = express(); // ✅ This is missing in your file!
 const PORT = process.env.PORT || 3000;
